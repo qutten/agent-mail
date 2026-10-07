@@ -11,11 +11,15 @@ description: Agent Mail 常驻轮询。监视收件箱，把授权发件人（�
 授权发件人发来邮件 → 本机常驻程序唤醒一个 headless Agent 执行 → 结果以回执邮件发回
 ```
 
-依赖：`@tencent-qqmail/agently-cli`（见 [仓库 README](../README.md) 的前置条件）。
+依赖：`@tencent-qqmail/agently-cli`（见
+[仓库 README](https://github.com/qutten/agent-mail#readme) 的前置条件）。
 邮件读写能力本身属于 `agently-mail` skill；本 skill 只负责**常驻自动化**。
 
 > ⚠️ 本 skill 会开启一条**无发件人认证的远程执行通道**。启用前请务必阅读
-> [docs/SECURITY.md](../docs/SECURITY.md)。
+> [SECURITY.md](https://github.com/qutten/agent-mail/blob/main/docs/SECURITY.md)。
+>
+> 这里用绝对 URL 而非相对路径：本 skill 被安装到 `~/.agents/skills/` 后，
+> 仓库里的 `../README.md` 和 `../docs/` 在安装位置并不存在。
 
 ---
 
