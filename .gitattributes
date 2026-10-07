@@ -1,0 +1,8 @@
+# PowerShell 脚本必须是 UTF-8 with BOM —— Windows PowerShell 5.1 在没有 BOM 时
+# 会按 ANSI/GBK 解码，中文注释会把字符串字面量撑爆导致语法错误。务必保留 BOM。
+*.ps1  text eol=crlf
+*.cmd  text eol=crlf
+
+*.md   text eol=lf
+*.json text eol=lf
+.gitignore text eol=lf

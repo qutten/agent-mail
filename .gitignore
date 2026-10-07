@@ -1,0 +1,19 @@
+# ---- 运行时状态：绝不要提交 ----
+# 这些文件含真实邮箱地址、授权白名单与邮件内容
+settings.json
+state.json
+poller.pid
+DISABLED
+logs/
+inbox/
+outbox/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+
+# ---- PowerShell ----
+*.log
